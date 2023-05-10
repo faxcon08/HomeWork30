@@ -24,14 +24,14 @@ public class AppConfig {
     }
     @Bean(name="callCarDriver")
     public Driver getCarDriver() {
-        return new Driver("CarDriver", (Car) getCarBean());
+        return new Driver("CarDriver",  getCarBean());
     }
     @Bean(name="callBusDriver")
     public Driver getBusDriver() {
-        return new Driver("BusDriver", (Bus) getBusBean());
+        return new Driver("BusDriver", getBusBean());
     }
     @Bean(name="callPickupDriver")
     public Driver getPickupDriver() {
-        return new Driver("PickupDriver", (Pickup) getPickupBean());
+        return new Driver("PickupDriver",  getPickupBean());
     }
 }

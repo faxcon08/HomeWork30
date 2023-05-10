@@ -7,22 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class Driver {
     private String name;
-
     private Transport transport;
-    @Autowired
-    public Driver(String name,@Qualifier("callCar") Car ts1) {
+
+    public Driver(String name, Transport ts) {
         this.name=name;
-        this.transport=ts1;
-    }
-    @Autowired
-    public Driver(String name,@Qualifier("callBus") Bus ts2) {
-        this.name=name;
-        this.transport=ts2;
-    }
-    @Autowired
-    public Driver(String name,@Qualifier("callPickup") Pickup ts3) {
-        this.name=name;
-        this.transport=ts3;
+        this.transport=ts;
     }
 
     public String getName() {
@@ -45,4 +34,5 @@ public class Driver {
     public String toString() {
         return "Driver [ "+name+" ] with "+transport;
     }
+
 }
