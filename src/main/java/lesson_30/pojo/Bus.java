@@ -1,4 +1,4 @@
-package lesson_30;
+package lesson_30.pojo;
 
 import org.springframework.stereotype.Component;
 

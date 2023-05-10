@@ -1,8 +1,8 @@
-package lesson_30;
+package lesson_30.config;
 
+import lesson_30.pojo.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
